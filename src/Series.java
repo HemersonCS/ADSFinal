@@ -1,31 +1,30 @@
-Series.js
 public class Series
     //ATRIBUTOS CLASSE Series
-	private Int duracaoEpisodio;
-    private Int numeroEpisodio;
+	private int duracaoEpisodio;
+    private int numeroEpisodio;
 	private int temporadaEpisódio;
 	
-	public Series(Int duracaoEpidodio, , int numeroEpisodio, int temporadaEpisodio) {
+	public Series(int duracaoEpidodio, int numeroEpisodio, int temporadaEpisodio) {
 		this.duracaoEpisodio = duracaoEpisodio;
-        this.numeroEpisodio - numeroEpisodio;
+        this.numeroEpisodio = numeroEpisodio;
 		this.temporadaEpisodio = temporadaEpisodio;
 		
 	
 	}
 
-	public Int getDuracaoEpisodio() {
+	public int getDuracaoEpisodio() {
 		return duracaoEpisodio;
 	}
 
-	public void setDuracaoEpisodio(Int duracaoEpisodio) {
+	public void setDuracaoEpisodio(int duracaoEpisodio) {
 		this.duracaoEpisodio = duracaoEpisodio;
 	}
 
-    public Int getNumeroEpisodio() {
+    public int getNumeroEpisodio() {
         return numeroEpisodio
     }
 
-    public void setNumeroEpisodio(Int numeroEpisodio) {
+    public void setNumeroEpisodio(int numeroEpisodio) {
         this.numeroEpisodio = numeroEpisodio;
     }
 
