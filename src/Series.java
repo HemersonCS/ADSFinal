@@ -1,55 +1,51 @@
-public class Series
-    //ATRIBUTOS CLASSE Series
-	private int duracaoEpisodio;
-    private int numeroEpisodio;
-	private int temporadaEpisódio;
+public class Series {
+
+	private String nome;
+	private double avaliacaoIMDb;
+	private String criador;
+	private int quantidadeEpisodios;
 	
-	public Series(int duracaoEpidodio, int numeroEpisodio, int temporadaEpisodio) {
-		this.duracaoEpisodio = duracaoEpisodio;
-        this.numeroEpisodio = numeroEpisodio;
-		this.temporadaEpisodio = temporadaEpisodio;
+	public Series(String nome, double avaliacaoIMDb, String criador, int quantidadeEpisodios) {
+		super();
+		this.nome = nome;
+		this.avaliacaoIMDb = avaliacaoIMDb;
+		this.criador = criador;
+		this.quantidadeEpisodios = quantidadeEpisodios;
 		
 	
 	}
 
-	public int getDuracaoEpisodio() {
-		return duracaoEpisodio;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setDuracaoEpisodio(int duracaoEpisodio) {
-		this.duracaoEpisodio = duracaoEpisodio;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-
-    public int getNumeroEpisodio() {
-        return numeroEpisodio
-    }
-
-    public void setNumeroEpisodio(int numeroEpisodio) {
-        this.numeroEpisodio = numeroEpisodio;
-    }
-
-	public int getTemporadaEpisodio() {
-		return temporadaEpisodio;
-	}
-
-	public void setTemporadaEpisodio(int temporadaEpisodio) {
-		this.temporadaEpisodio = temporadaEpisodio;
-	}
-
 	
-	public void Maratonar() {
-		System.out.println ("Você está assistindo o episódio + "getNu");
-		
+	public double getAvaliacaoIMDb() {
+		return avaliacaoIMDb;
 	}
 
-	
-	public void previa() {
-		System.out.println ("Exibindo prévia da série "+getNome());
-		
+	public void setAvaliacaoIMDb(double avaliacaoIMDb) {
+		this.avaliacaoIMDb = avaliacaoIMDb;
 	}
 
-	
-	
-	
+	public String getCriador() {
+		return criador;
+	}
+
+	public void setCriador(String criador) {
+		this.criador = criador;
+	}
+
+	public int getQuantidadeEpisodios() {
+		return quantidadeEpisodios;
+	}
+
+	public void setQuantidadeEpisodios(int quantidadeEpisodios) {
+		this.quantidadeEpisodios = quantidadeEpisodios;
+	}
+
 	
 }
