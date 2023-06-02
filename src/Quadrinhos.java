@@ -33,4 +33,12 @@ public class Quadrinhos {
 	public void exibir () {
 		System.out.println ("Nome: "+ getTitulo()+ ", foi lançado em "+getAnoLancamento()+", ilustrado por "+getIlustrador());
 		}
+
+    public void imprimirTitulo() {
+    }
+
+	public void ler() {
+		System.out.println ("Agora vou ler o quadrinho"+ getTitulo());
+	}
+	
 }
