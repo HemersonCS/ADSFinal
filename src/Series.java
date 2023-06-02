@@ -42,6 +42,8 @@ public class Series {
 	public int getTotalDeAvaliacoes() {
 		return totalDeAvaliacoes;
 	}
+// criando dois métodos na classe Series
+
 	public void exibeFichaTecnica(){
 		System.out.println("Nome do filme: " + nome);
 		System.out.println("Nome do criador: " + criador);
@@ -50,4 +52,5 @@ public class Series {
 	public double exibeMediaAvaliacao() {
 		return somaDasAvaliacoes / totalDeAvaliacoes;
 	}
+	
 }
