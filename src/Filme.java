@@ -12,7 +12,7 @@ public class Filme {
 	}
 
 	public void FoiAssitido() {
-		if (Assistiu == true) {
+		if (Assistiu = true) {
 			System.out.println("O Filme " + getTitulo_Filme() + " foi assistido.");
 		} else {
 			System.out.println("O Filme " + getTitulo_Filme() + " não foi assistido.");
@@ -32,7 +32,7 @@ public class Filme {
 	}
 
 	public void setTitulo_Filme(String titulo_Filme) {
-		Titulo_Filme = título_Filme;
+		Titulo_Filme = titulo_Filme;
 	}
 
 	public boolean isAssistiu() {
