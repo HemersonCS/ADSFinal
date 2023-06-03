@@ -4,15 +4,13 @@ public class Livros {
 	private int anoLancamento;
 	private String escritor;
 	private int quantidadePaginas;
-	private Quadrinhos quadrinho;
+	private Quadrinhos quadrinhos;
 
-	public void Livro() {
-        quadrinho = new Quadrinhos(escritor, anoLancamento, escritor);
-    }
-    
-public void imprimirTituloQuadrinho() {
-        quadrinho.imprimirTitulo();
-    }
+	public void remover () {
+		quadrinhos.remove(null);
+	}
+
+
 
 	public Livros(String titulo, int anoLancamento, String escritor, int quantidadePaginas) {
 		this.titulo = titulo;
