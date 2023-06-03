@@ -14,10 +14,6 @@ public void imprimirTituloQuadrinho() {
         quadrinho.imprimirTitulo();
     }
 
-    
-    
-
-	
 	public Livros(String titulo, int anoLancamento, String escritor, int quantidadePaginas) {
 		this.titulo = titulo;
 		this.anoLancamento = anoLancamento;
@@ -58,4 +54,14 @@ public void imprimirTituloQuadrinho() {
 	}
 
 		
+	public void mostra() {
+		System.out.println("O título do livro é: " + getTitulo());
+		
+	}
+
+	
+	public void identifica() {
+       System.out.println("O nome do autor deste livro é: " + getEscritor());		
+	}
+
 }
