@@ -37,8 +37,8 @@ public class Quadrinhos {
     public void imprimirTitulo() {
     }
 
-	public void ler() {
-		System.out.println ("Agora vou ler o quadrinho"+ getTitulo());
+	public void exibe() {
+		quadrinho.exibir();
 	}
 	
 }
