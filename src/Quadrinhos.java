@@ -12,6 +12,8 @@ public class Quadrinhos {
 		this.ilustrador = ilustrador;
 	}
 
+	Livros livros = new Livros(titulo, anoLancamento, ilustrador, 0);
+
 	ArrayList<Quadrinhos> quadrinhos = new ArrayList<Quadrinhos>();
 
 	public String getTitulo() {
@@ -32,7 +34,11 @@ public class Quadrinhos {
 	
 	public void exibir () {
 		System.out.println ("Nome: "+ getTitulo()+ ", foi lançado em "+getAnoLancamento()+", ilustrado por "+getIlustrador());
-		}
+	}
+
+	public void livroMostra (){
+		livros.mostra();
+	}
 
     public void imprimirTitulo() {
     }
