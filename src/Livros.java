@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Livros {
 
 	private String titulo;
@@ -60,6 +62,20 @@ public class Livros {
 	
 	public void identifica() {
        System.out.println("O nome do autor deste livro é: " + getEscritor());		
+	}
+
+	public void imprimir() {
+		Scanner s = new Scanner(System.in);
+		System.out.println("informe a quantidade de páginas desejadas");
+		int q = s.nextInt();
+		if (q < (getQuantidadePaginas()*0.1)) {
+		System.out.println("informe o número da primeira página");
+		int p = s.nextInt();
+		System.out.println("Documento enviado para a impressora da página "+p+" à "+(p+q-1));
+		} else { 
+			System.out.println("Reprodução de mais de 10% da obra não permitida!");
+		}
+		s.close();
 	}
 
 }
