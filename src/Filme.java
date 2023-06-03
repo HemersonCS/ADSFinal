@@ -1,21 +1,37 @@
 
 public class Filme {
 
-	public String Titulo_Filme;
-	public boolean Assistiu;
-	public int Nota;
+	private String Titulo_Filme;
+	private boolean Assistiu;
+	private int Nota;
 
 	public Filme(String titulo_Filme, boolean assistiu, int nota) {
-		Titulo_Filme = titulo_Filme;
-		Assistiu = assistiu;
-		Nota = nota;
+		this.Titulo_Filme = titulo_Filme;
+		this.Assistiu = assistiu;
+		this.Nota = nota;
 	}
 
-	public String getTítulo_Filme() {
+	public void FoiAssitido() {
+		if (Assistiu == true) {
+			System.out.println("O Filme " + getTitulo_Filme() + " foi assistido.");
+		} else {
+			System.out.println("O Filme " + getTitulo_Filme() + " não foi assistido.");
+		}
+	}
+
+	public void NotaFilme() {
+		if (Assistiu = true) {
+			System.out.println("A nota de avaliação do filme foi " + Nota);
+		} else {
+			System.out.println("Este filme ainda não foi avaliado");
+		}
+	}
+
+	public String getTitulo_Filme() {
 		return Titulo_Filme;
 	}
 
-	public void setTítulo_Filme(String título_Filme) {
+	public void setTitulo_Filme(String titulo_Filme) {
 		Titulo_Filme = título_Filme;
 	}
 
