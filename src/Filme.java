@@ -51,4 +51,10 @@ public class Filme {
 		Nota = nota;
 	}
 
+	public int somaDasAvaliacoes;
+	public int totalDeAvaliacoes;
+
+	public double exibeMediaAvaliacao() {
+		return somaDasAvaliacoes / totalDeAvaliacoes;
+	}
 }
